@@ -23,7 +23,7 @@ const WardenDashboard = () => {
 
   const fetchStudents = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/student/data');
+      const res = await fetch('https://hostelaid.onrender.com//api/student/data');
       const data = await res.json();
       setStudents(data);
     } catch (err) {
@@ -34,7 +34,7 @@ const WardenDashboard = () => {
   const handleMenuSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/menu/set', {
+      const res = await fetch('https://hostelaid.onrender.com//api/menu/set', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(menuFormData)
@@ -50,7 +50,7 @@ const WardenDashboard = () => {
   const handleNoticeSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/notice/set', {
+      const res = await fetch('https://hostelaid.onrender.com//api/notice/set', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(noticeForm)
@@ -65,7 +65,7 @@ const WardenDashboard = () => {
 
   const fetchNameData = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/lunch/name');
+      const res = await fetch('https://hostelaid.onrender.com//api/lunch/name');
       const data = await res.json();
       setNameData(data);
     } catch (err) {
@@ -75,7 +75,7 @@ const WardenDashboard = () => {
 
   const fetchQuantityData = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/lunch/qauntity');
+      const res = await fetch('https://hostelaid.onrender.com//api/lunch/qauntity');
       const data = await res.json();
       setQuantityData(data);
     } catch (err) {

@@ -11,7 +11,7 @@ const DriverRegister = () => {
       e.preventDefault();
       try{
         console.log("handle submit")
-        const res = await fetch('http://localhost:5000/api/auth/driver/register', {
+        const res = await fetch('https://hostelaid.onrender.com//api/auth/driver/register', {
           method:'POST',
           headers: {'Content-Type': 'application/json'},
           body:JSON.stringify({email:email, password:password, name:name}),

@@ -1,6 +1,6 @@
 // src/components/DriverDashboard.jsx
 import React, { useEffect } from "react";
-import socket from "../socket"; // Make sure this connects to http://localhost:5000
+import socket from "../socket"; // Make sure this connects to https://hostelaid.onrender.com/
 
 const DriverDashboard = () => {
   useEffect(() => {

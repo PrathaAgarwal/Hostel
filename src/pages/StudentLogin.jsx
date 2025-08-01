@@ -10,7 +10,7 @@ const StudentLogin = () => {
       e.preventDefault();
       try{
         console.log("handle submit")
-        const res = await fetch('http://localhost:5000/api/auth/student/login', {
+        const res = await fetch('https://hostelaid.onrender.com//api/auth/student/login', {
           method:'POST',
           headers: {'Content-Type': 'application/json'},
           credentials: 'include',

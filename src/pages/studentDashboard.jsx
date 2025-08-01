@@ -16,7 +16,7 @@ const StudentDashboard = () => {
 
   const fetchMenu = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/menu/get');
+      const res = await fetch('https://hostelaid.onrender.com//api/menu/get');
       const data = await res.json();
       setMenuData(data);
     } catch (err) {
@@ -26,7 +26,7 @@ const StudentDashboard = () => {
 
   const fetchNotice = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/notice/get');
+      const res = await fetch('https://hostelaid.onrender.com//api/notice/get');
       const data = await res.json();
       setNoticeData(data);
     } catch (err) {
@@ -36,7 +36,7 @@ const StudentDashboard = () => {
 
   const bookLunch = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/lunch/reserve', {
+      const res = await fetch('https://hostelaid.onrender.com//api/lunch/reserve', {
         method: 'POST',
         credentials: 'include',
       });
@@ -49,7 +49,7 @@ const StudentDashboard = () => {
 
   const showBirth = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/birth/get');
+      const res = await fetch('https://hostelaid.onrender.com//api/birth/get');
       const data = await res.json();
       setBirthData(data);
     } catch (err) {
